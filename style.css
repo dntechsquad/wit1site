@@ -1,28 +1,9 @@
-.header-background {
-  background-color: #000;
-  height: 200px;
-}
-
-.logo {
-  color: #0000FF;
-  text-align: center;
-  padding: 50px;
-  font-size: 4em;
-  font-family: 'Press Start 2P', cursive;
-}
-
+/*Global style*/
 body {
   font-family: 'Chathura', sans-serif;
   color: #FFF;
   width: auto;
   height: auto;
-}
-
-.wrapper {
-  background-color: #0000FF; /* blue */
-  height: auto;
-  width: auto;
-  padding: 20px;
 }
 
 .h1-background{
@@ -44,4 +25,38 @@ h2 {
 
 p, li{
   font-size: 2em;
+}
+
+/*Header styles*/
+.header-background {
+  background-color: #000;
+  height: 200px;
+}
+
+.logo {
+  color: #0000FF;
+  text-align: center;
+  padding: 50px;
+  font-size: 4em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/*Main content*/
+
+.wrapper {
+  background-color: #0000FF; /* blue */
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+
+.survivor-section {
+  width: 40%;
+  float: left;
+  margin-right: 20%;
+}
+
+.death-section {
+  width: 40%;
+  float: right;
 }
