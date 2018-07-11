@@ -27,10 +27,11 @@ p, li{
   font-size: 2em;
 }
 
+
 /*Header styles*/
 .header-background {
   background-color: #000;
-  height: 200px;
+  grid-column: 1/-1;
 }
 
 .logo {
@@ -45,23 +46,43 @@ p, li{
 
 .wrapper {
   background-color: #0000FF; /* blue */
-  height: auto;
-  width: auto;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px auto auto 80px;
+  grid-gap: 5px;
 }
 
 .survivor-section {
-  width: 40%;
-  float: left;
-  margin-right: 20%;
+  grid-column: 1/6;
 }
 
 .death-section {
-  width: 40%;
-  float: right;
+  grid-column: 6/-1;
 }
 
 .summary-section {
+  grid-column: 1/-1;
+}
+
+
+/* Footer */
+footer {
+  background-color: black;
+  grid-column: 1/-1;
+}
+
+/*Fixing the elements to fit on small screens*/
+@media screen and (max-width: 720px) {
+.wrapper {
+  padding: 10%;
+}
+
+.survivor-section {
   width: 100%;
-  clear: both;
+}
+
+.death-section {
+  width: 100%;
+}
+
 }
