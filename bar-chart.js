@@ -1,7 +1,7 @@
-var sessionArray = [1, 2, 3]
-var timestampArray = [30, 45, 750]
+var sessionArray = [1, 2, 3];
+var timestampArray = [30, 45, 750];
 
-//Creates the svg
+//Creates the svg div (container where all the elements of the chart goes)
 var svg = d3.select(".bar-chart").append("svg").attr("height","200px").attr("width", "100%");
 
 //Making the y axis
