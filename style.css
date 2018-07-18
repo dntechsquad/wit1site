@@ -10,6 +10,7 @@ body {
   background-color: #000;
   height: 75px;
   width: 30%;
+  margin: 0 auto;
 }
 
 .h1-titles {
@@ -31,7 +32,7 @@ p, li{
 /*Header styles*/
 .header-background {
   background-color: #000;
-  grid-column: 1/-1;
+  grid-area: h;
 }
 
 .logo {
@@ -44,32 +45,44 @@ p, li{
 /*Main content*/
 
 .wrapper {
+  height: 100%;
   background-color: #0000FF; /* blue */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 200px auto auto 100px;
-  grid-gap: 5px;
+  grid-gap: 40px;
+  grid-template-areas:
+  "h h h h h h h h h h h h"
+  "s s s s s s d d d d d d"
+  "z z z z z z z z z z z z"
+  "f f f f f f f f f f f f";
+  padding: 20px;
 }
 
 .survivor-section {
-  grid-column: 1/6;
+  grid-area: s;
 }
 
 .death-section {
-  grid-column: 6/-1;
+  grid-area: d;
 }
 
 .summary-section {
-  grid-column: 1/-1;
+  grid-area: z;
 }
-
 
 /* Footer */
 footer {
   background-color: black;
-  grid-column: 1/-1;
+  grid-area: f;
 }
 
+/*graph styles*/
+path.domain {
+  stroke: white;
+}
+
+/*modifying for mobile*/
 @media (max-width: 720px){
   .survivor-section {
     grid-column: 1/-1;
